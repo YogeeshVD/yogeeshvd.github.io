@@ -26,8 +26,6 @@ public class MenuItemDaoCollectionImplTest {
 
 	public static void testGetMenuitemListAdmin() throws ParseException {
 		MenuItemDaoCollectionImpl menuItemDao = new MenuItemDaoCollectionImpl();
-
-		menuItemDao.getMenuItemListAdmin();
 		List<MenuItem> menuItemList = menuItemDao.getMenuItemListAdmin();
 		for (MenuItem x : menuItemList)
 			System.out.println(x);
@@ -36,7 +34,6 @@ public class MenuItemDaoCollectionImplTest {
 
 	public static void testGetMenuItemListCustomer() throws ParseException {
 		MenuItemDaoCollectionImpl menuItemDao = new MenuItemDaoCollectionImpl();
-		menuItemDao.getCustomerListCustomer();
 		List<MenuItem> menuItemList = menuItemDao.getCustomerListCustomer();
 		for (MenuItem x : menuItemList)
 			System.out.println(x);
