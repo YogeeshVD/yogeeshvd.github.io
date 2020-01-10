@@ -37,7 +37,7 @@ public class ShowCartServlet extends HttpServlet {
 			}
 			request.setAttribute("menuItemListCustomer", menuItemListCustomer);
 			request.setAttribute("total", total);
-			request.setAttribute("msg3", "Item removed from Cart successfull");
+			
 			RequestDispatcher rd = request.getRequestDispatcher("cart.jsp");
 			rd.forward(request, response);
 		} catch (CartEmptyException e) {
