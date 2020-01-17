@@ -59,7 +59,7 @@ public class CartDaoCollectionImpl implements CartDao {
 	
 
 	@Override
-	public List<MenuItem> removecartItem(long userId, long menuItemId) throws CartEmptyException {
+	public void removecartItem(long userId, long menuItemId) throws CartEmptyException {
 		List<MenuItem> menuItemList = Usercart.get(userId).getMenuItemList();
 		if (menuItemList==null || menuItemList.isEmpty()) {
 			
@@ -73,7 +73,7 @@ public class CartDaoCollectionImpl implements CartDao {
 			}
 
 		}
-		return menuItemList;
+		
 
 	}
 }

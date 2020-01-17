@@ -76,7 +76,7 @@ on m.me_id = c.ct_pr_id  ;
 
 -- -----------------------------------------------------------------------------------
 -- delete cart item
-delete from cart where ct_pr_id = 2 limit 1;
+delete from cart where ct_us_id=1 and ct_pr_id = 2 limit 1;
 
 
 

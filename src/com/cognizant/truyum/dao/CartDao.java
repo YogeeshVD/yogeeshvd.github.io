@@ -7,7 +7,7 @@ import com.cognizant.truyum.model.MenuItem;
 public interface CartDao {
 	public void addCartItem(long userId, long menuItemId);
 	public List<MenuItem> getAllCartItems(long userId) throws CartEmptyException;
-	public List<MenuItem> removecartItem(long userId,long menuItemId) throws CartEmptyException;
+	public void removecartItem(long userId,long menuItemId) throws CartEmptyException;
 	
 	
 	
